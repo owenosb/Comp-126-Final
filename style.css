@@ -64,6 +64,7 @@ footer {
 footer h1 {
     font-family: "Source Serif 4", "serif";
     color: #96CDFF;
+    padding: 10px;
 }
 
 /* Main */
@@ -90,7 +91,7 @@ main {
 {
   text-decoration: none;
   color: #232323;
-  
+
   transition: color 0.3s ease;
 }
 
@@ -186,6 +187,7 @@ main {
 {
   position: absolute;
   width: 100%;
+  height: 100vh;
   margin: -150px 0 0 -50px;
   padding: 100px;
   padding-top: 150px;
