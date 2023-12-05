@@ -19,8 +19,7 @@ body{
   grid-template-rows: 2fr 6fr 1fr;
 }
 
-/* Header & Nav */
-
+/* Header */
 header {
   grid-column: 1/2;
   grid-row: 1/2;
@@ -38,9 +37,7 @@ header h1 a{
   text-decoration: none;
 }
 
-
 /* Footer */
-
 footer {
   grid-column: 1/2;
   grid-row: 3/4;
@@ -93,7 +90,6 @@ transition: color 0.3s ease;
 color: #96CDFF;
 }
 
-
 #menuToggle input
 {
 display: block;
@@ -102,12 +98,9 @@ height: 32px;
 position: absolute;
 top: -7px;
 left: -5px;
-
 cursor: pointer;
-
-opacity: 0; /* hide this */
-z-index: 2; /* and place it over the hamburger */
-
+opacity: 0;
+z-index: 2; 
 -webkit-touch-callout: none;
 }
 
@@ -273,7 +266,8 @@ transform: none;
 /* Header & Nav */
 
 header {
-    grid-area: "head";
+  grid-column: 1/2;
+  grid-row: 1/2;
     background-color: #2E2E3A;
 }
 header h1 {
