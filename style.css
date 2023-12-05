@@ -90,7 +90,6 @@ transition: color 0.3s ease;
 color: #96CDFF;
 }
 
-
 #menuToggle input
 {
 display: block;
@@ -99,12 +98,9 @@ height: 32px;
 position: absolute;
 top: -7px;
 left: -5px;
-
 cursor: pointer;
-
-opacity: 0; /* hide this */
-z-index: 2; /* and place it over the hamburger */
-
+opacity: 0;
+z-index: 2; 
 -webkit-touch-callout: none;
 }
 
