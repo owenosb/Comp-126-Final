@@ -13,11 +13,13 @@ main h2 {
 
 main dl {
     margin-bottom: 25px;
+    padding: 0px 25px;
     color: #FFFFFF;
 }
 main dt {
     padding-bottom: 25px;
     font-size: 2rem;
+    font-weight: bold;
 }
 main dd {
     padding-bottom: 25px;
