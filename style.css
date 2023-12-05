@@ -364,6 +364,11 @@ main {
 #mobileNav {
   display: none; /* Show by default */
 }
+#footernav {
+  display: flex; /* Show by default */
+}
+
+
 }
 
 
