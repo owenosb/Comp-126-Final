@@ -19,8 +19,7 @@ body{
   grid-template-rows: 2fr 6fr 1fr;
 }
 
-/* Header & Nav */
-
+/* Header */
 header {
   grid-column: 1/2;
   grid-row: 1/2;
@@ -38,9 +37,7 @@ header h1 a{
   text-decoration: none;
 }
 
-
 /* Footer */
-
 footer {
   grid-column: 1/2;
   grid-row: 3/4;
