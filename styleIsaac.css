@@ -1,0 +1,25 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h2 {
+    margin: 25px 25px;
+    font-family: "Source Serif 4", "serif";
+    font-size: 3rem;
+    color: #FFFFFF;
+}
+
+main dl {
+    margin-bottom: 25px;
+    color: #FFFFFF;
+}
+main dt {
+    padding-bottom: 25px;
+    font-size: 2rem;
+}
+main dd {
+    padding-bottom: 25px;
+    font-size: 1.15rem;
+}
