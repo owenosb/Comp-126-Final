@@ -30,6 +30,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     background-color: #2E2E3A;
 }
 header h1 {
@@ -39,6 +40,7 @@ header h1 {
 nav li {
     display: block;
     padding: 20px 50px;
+    text-align: center;
 }
 nav li a {
     font-size: 20px;
