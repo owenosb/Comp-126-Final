@@ -14,6 +14,7 @@ main h2 {
 main dl {
     margin-bottom: 25px;
     padding: 0px 25px;
+    max-width: 95%;
     color: #FFFFFF;
 }
 main dt {
@@ -24,4 +25,5 @@ main dt {
 main dd {
     padding-bottom: 25px;
     font-size: 1.15rem;
+    text-indent: 25px;
 }
