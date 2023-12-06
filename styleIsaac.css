@@ -27,3 +27,12 @@ main dd {
     font-size: 1.15rem;
     text-indent: 25px;
 }
+
+.desc-container {
+    display: flex;
+    padding-bottom: 25px;
+    flex-direction: column;
+}
+.desc-container img {
+    max-width: 95%;
+}
