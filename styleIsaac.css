@@ -68,6 +68,10 @@ input {
     font-size: 1rem;
 }
 
+textarea {
+    width: 100%;
+}
+
 #submit {
     border-radius: 5px;
     font-size: 1rem;
