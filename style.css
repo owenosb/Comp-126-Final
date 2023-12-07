@@ -30,7 +30,7 @@ header h1 {
   color: #96CDFF;
   text-align: center;
   text-decoration: none;
-  
+  padding: 15px;
 }
 header h1 a{
   font-family: "Source Serif 4", "serif";
@@ -324,13 +324,12 @@ main {
 #desktopNav {
         display: flex;
         justify-content: center;
-        padding-top: 10px;
         padding-bottom: 15px;
     }
 
     #desktopNav li {
         display: inline-block;
-        padding: 0 20px;
+        padding: 0 25px;
     }
 
     #desktopNav li a {
