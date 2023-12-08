@@ -1,79 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Serif+4:opsz@8..60&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Nunito Sans", sans-serif;
-}
-
-body{
-    margin: 0;
-    padding: 0;
-}
-.home-grid-container {
-    display: grid;
-    width: 100%;
-    height: 100vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 6fr 1fr;
-    grid-template-areas: "header"
-                        "main" "footer";
-}
-
-/* Header & Nav */
-
-header {
-    grid-area: "header";
-    display: flex;
-    padding: 0% 3%;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #2E2E3A;
-}
-header h1 {
-    font-family: "Source Serif 4", "serif";
-    color: #96CDFF;
-}
-nav li {
-    display: inline-block;
-    padding: 0px 50px;
-}
-nav li a{
-    font-size: 20px;
-    text-decoration: none;
-    color: #FFFFFF;
-}
-nav li a:hover{
-    text-decoration: underline;
-    text-decoration-color: #96CDFF;
-    color: #96CDFF;
-}
-nav li a:focus{
-    text-decoration: underline;
-    text-decoration-color: #96CDFF;
-    color: #96CDFF;
-}
-
-/* Footer */
-
-footer {
-    grid-area: "footer";
-    display: flex;
-    padding: 0% 3%;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #2E2E3A;
-}
-footer h1 {
-    font-family: "Source Serif 4", "serif";
-    color: #96CDFF;
-}
-
-/* Main */
-
 main {
-    grid-area: "main";
-    background-color: #454851;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "heading";
+    justify-items: center;
+}
+
+main h2 {
+    grid-area: heading;
+    margin: 25px 25px;
+    font-family: "Source Serif 4", "serif";
+    font-size: 3rem;
+    color: #FFFFFF;
+    justify-self: center;
 }
