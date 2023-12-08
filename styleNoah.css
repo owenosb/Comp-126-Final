@@ -39,7 +39,7 @@ main hr {
     align-items: center;
 }
 
-#t-img-1 {
+.t-img {
     height: 90%;
     width: 80%;
 }
@@ -63,4 +63,50 @@ p {
 .testimonial-border {
     margin-top: 25px;
     width: 50%;
+}
+
+.lg-divider {
+    display: none;
+}
+
+@media screen and (min-width: 900px)  {
+    .testimonial-container {
+        display: grid;
+        margin: 20px 0px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 0.2fr;
+        grid-template-areas: "customer testimonial"
+                            "cust-info testimonial";
+        justify-items: center;
+    }
+
+    .t-img {
+        grid-area: customer;
+    }
+
+    .ceo-info {
+        grid-area: cust-info;
+    }
+
+    p {
+        grid-area: testimonial;
+        align-self: center;
+    }
+
+    .testimonial-border {
+        display: none;
+    }
+
+    .lg-divider {
+        display: initial;
+        margin-bottom: 25px;
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1217px) {
+    .t-img {
+        height: 85%;
+        width: 70%;
+    }
 }
