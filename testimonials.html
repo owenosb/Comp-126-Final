@@ -4,7 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="styleNoah.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styleOwen2.css">
     <meta name="viewport" content="width=device-width, initial-scale-1, shrink-to-fit=no">
     <title>Home</title>
 </head>
@@ -13,10 +14,23 @@
 <div class="home-grid-container">
 
     <header>
-        <h1>Video Production Brand</h1>
-
+        <h1><a href="index.html">Video Production Brand</a></h1>
         <nav>
-            <ul>
+            <div id="menuToggle">
+                <input type="checkbox"/>
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <ul id="desktopNav">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="services.html">Services</a></li>
@@ -28,22 +42,58 @@
     </header>
 
     <main>
+        <div id="reviews-section">
+            <h1>Customer Reviews</h1>
+            <div class="review">
+                <h2>Jane Doe</h2>
+                <p class="rating">Rating: 5 Stars</p>
+                <p class="review-text">I recently worked with Video Studio Brand for a video project, and I was thoroughly impressed! The team was professional, creative, and dedicated to delivering high-quality work. They went above and beyond to ensure the final product exceeded my expectations. Highly recommend for anyone needing top-notch video production services!</p>
+                <h2>John Smith</h2>
+                <p class="rating">Rating: 5 Stars</p>
+                <p class="review-text">Working with Video Studio Bran was a game-changer for our marketing efforts. Their team's approach to storytelling through video captured the essence of our brand perfectly. Every step, from initial concept to final edit, was handled with utmost professionalism and creativity. The end result was not just a video, but a powerful tool that significantly boosted our engagement. Exceptional service, highly skilled team, and remarkable end product - I couldn't ask for more</p>
+            </div>
 
+        </div>
+
+        <h2>Leave a Review</h2>
+
+        <form action="submit-review.php" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="rating">Rating:</label><br>
+            <select id="rating" name="rating">
+                <option value="5">5 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="2">2 Stars</option>
+                <option value="1">1 Star</option>
+            </select><br>
+
+            <label for="review">Review:</label><br>
+            <textarea id="review" name="review" rows="4" cols="50" required></textarea><br>
+
+            <input type="submit" value="Submit Review">
+        </form>
     </main>
 
     <footer>
         <h1>Video Production Brand</h1>
 
         <nav>
-            <ul>
+            <ul id="footernav">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">portfolio</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="testimonials.html">Testimonials</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
         </nav>
+
     </footer>
 
 </div>
