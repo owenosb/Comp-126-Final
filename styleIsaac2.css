@@ -1,6 +1,27 @@
+/* Body */
+
 .contact-body {
     overflow-x: hidden;
 }
+
+.contact-grid-container {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-areas: "header"
+                        "main"
+                        "footer";
+}
+
+/* Header */
+
+header {
+    grid-area: header;
+}
+
+/* Main */
 
 main {
     display: grid;
@@ -20,6 +41,8 @@ main h2 {
     font-size: 3rem;
     color: #FFFFFF;
 }
+
+/* Form */
 
 .form-container {
     grid-area: message-form;
@@ -70,6 +93,20 @@ textarea {
 #submit:hover {
     background-position: 200%;
 }
+#submit:focus {
+    background-position: 200%;
+}
+
+/* Contact Info */
+
+.contact-info-container {
+    grid-area: contact-info;
+    display: flex;
+    margin: 20px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: flex-start;
+}
 
 span {
     font-family: "Source Serif 4", "serif";
@@ -82,33 +119,7 @@ p {
     color: #FFFFFF;
 }
 
-.contact-grid-container {
-    display: grid;
-    width: 100%;
-    height: 100vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 4fr 1fr;
-    grid-template-areas: "header"
-                        "main"
-                        "footer";
-}
-
-header {
-    grid-area: header;
-}
-
-footer {
-    grid-area: footer;
-}
-
-.contact-info-container {
-    grid-area: contact-info;
-    display: flex;
-    margin: 20px 20px;
-    flex-direction: column;
-    align-items: flex-start;
-    align-self: flex-start;
-}
+/* Map */
 
 iframe {
     grid-area: map;
@@ -116,6 +127,14 @@ iframe {
     width: 95%;
     height: 450px;
 }
+
+/* Footer */
+
+footer {
+    grid-area: footer;
+}
+
+/* Media Queries */
 
 @media screen and (min-width: 900px)  {
     main {
