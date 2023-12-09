@@ -2,9 +2,6 @@ body {
     overflow-x: hidden;
 }
 
-
-
-
 /* Main */
 main {
     display: flex;
@@ -40,11 +37,11 @@ main p {
     text-indent: 25px;
 }
 
+/* Form */
 
 .form-container {
-    grid-area: message-form;
     height: 95%;
-    width: 95%;
+    max-width: 90%;
     margin: 15px 0px;
     border: 1px solid #A9A9A9;
     background-color: #F5F5F5;
@@ -90,14 +87,4 @@ textarea {
 }
 #submit:focus {
     background-color: #0056b3;
-}
-
-/* Media Query */
-
-@media screen and (min-width: 900px)  {
-    .desc-container img {
-        max-width: 60%;
-        max-height: 60%;
-        margin-bottom: 0px;
-    }
 }
