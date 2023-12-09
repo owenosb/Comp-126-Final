@@ -78,23 +78,21 @@ textarea {
 }
 
 #submit {
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
     border: none;
-    background-image: linear-gradient(to right, #83D9D6 45%, #7BF1A8 95%);
-    background-size: 150%;
-    background-position: 75%;
-    background-repeat: no-repeat;
-    background-color: #7BF1A8;
-    color: #000000;
-    transition: 0.5s;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
+
 #submit:hover {
-    background-position: 200%;
+    background-color: #0056b3;
 }
 #submit:focus {
-    background-position: 200%;
+    background-color: #0056b3;
 }
 
 /* Contact Info */
